@@ -1,9 +1,18 @@
 {
   "name": "react-package",
-  "version": "0.0.1",
-  "description": "react as npm-package test",
-  "main": "index.js",
-  "repository": "https://github.com/Tony-Klink/react-package",
-  "author": "Yan",
-  "license": "MIT"
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }
