@@ -53,7 +53,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "lib": "babel src/node_modules --out-dir lib --copy-files",
+    "lib": "export NODE_ENV='production' && babel src/node_modules --out-dir lib --copy-files",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
@@ -83,9 +83,7 @@
   },
   "babel": {
     "presets": [
-      "es2015",
-      "react",
-      "stage-0"
+      "react"
     ]
   },
   "eslintConfig": {
