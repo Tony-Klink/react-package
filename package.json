@@ -53,7 +53,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "lib": "export NODE_ENV='production' && babel src/node_modules --out-dir lib --copy-files",
+    "lib": "export NODE_ENV='development' && babel src/node_modules --out-dir lib --copy-files",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
