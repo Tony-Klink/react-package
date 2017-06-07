@@ -83,7 +83,7 @@
   },
   "babel": {
     "presets": [
-      "react"
+      "react-app"
     ]
   },
   "eslintConfig": {
