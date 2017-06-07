@@ -1,0 +1,9 @@
+{
+  "name": "react-package",
+  "version": "0.0.1",
+  "description": "react as npm-package test",
+  "main": "index.js",
+  "repository": "https://github.com/Tony-Klink/react-package",
+  "author": "Yan",
+  "license": "MIT"
+}
