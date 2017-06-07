@@ -2,16 +2,19 @@
   "name": "react-package",
   "version": "0.1.0",
   "private": true,
+  "main": "lib/index.js",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.0.0",
+    "babel-preset-env": "^1.5.1",
     "babel-preset-react-app": "^3.0.0",
     "babel-runtime": "6.23.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
@@ -47,6 +50,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "lib": "babel src/node_modules --out-dir lib --copy-files",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
@@ -76,7 +80,8 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "env"
     ]
   },
   "eslintConfig": {
