@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const del = require("del");
 const merge = require("merge-stream");
+const jsx = require('react-tools');
 
 gulp.task("clean:lib", function () {
     return del(["lib"]);
@@ -9,6 +10,7 @@ gulp.task("clean:lib", function () {
 gulp.task("build:lib", function () {
     gulp.start("clean:lib");
     let js = gulp.src([ "./src/node_modules/components/**/*.js", "!./src/node_modules/components/index.js"])
+                 //.pipe(jsx.transform(js,{"es6module":true}))
                  .pipe(gulp.dest("lib"));
 
     let css = gulp.src([ "./src/node_modules/components/**/*.css", "!./src/node_modules/components/index.css"])
