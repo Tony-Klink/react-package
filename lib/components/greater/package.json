@@ -1,5 +1,0 @@
-{
- "name": "greater",
- "private": true,
- "main": "./greater.js"
-}
